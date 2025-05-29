@@ -676,9 +676,26 @@ body {
 }
 
 .subtitle {
-  color: var(--base-light);
-  font-weight: 500;
+  color: #fff;
+  font-weight: 600;
   font-size: 1.1rem;
+  letter-spacing: 0.3px;
+  background: var(--accent-red);
+  border-radius: 6px;
+  display: inline-block;
+  padding: 4px 14px 4px 14px;
+  margin-bottom: 8px;
+}
+
+.ttt-main {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  background: #000;
+  border-radius: 16px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 0 2px 24px 0 #000C;
+  border: 2px solid var(--accent-red);
 }
 
 /* === TicTacToe Classic Game Overrides === */
@@ -925,15 +942,32 @@ body {
 }
 
 .btn {
-  background-color: var(--base-light);
-  color: white;
+  background-color: var(--accent-red);
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 10px 20px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background 0.13s, color 0.13s;
+  box-shadow: 0 1px 6px #0002;
+}
+
+.btn:hover:enabled, .btn:focus:enabled {
+  background-color: #fff;
+  color: var(--accent-red);
+}
+
+.btn:disabled, .btn[aria-disabled="true"] {
+  background: #444;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.btn-large {
+  padding: 12px 24px;
+  font-size: 1.1rem;
 }
 
 /* === TicTacToe Classic Game Overrides === */
