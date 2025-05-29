@@ -8,82 +8,6 @@
   --border-color: #444;
 }
 
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
-}
-
 body {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -93,162 +17,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
-}
-
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
 }
 
 .navbar {
@@ -265,82 +37,6 @@ body {
   z-index: 100;
 }
 
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
-}
-
 .logo {
   font-size: 1.25rem;
   font-weight: 600;
@@ -349,160 +45,8 @@ body {
   gap: 8px;
 }
 
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
-}
-
 .logo-symbol {
   color: var(--accent-red);
-}
-
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
 }
 
 .container {
@@ -511,82 +55,6 @@ body {
   padding: 0 24px;
   width: 100%;
   box-sizing: border-box;
-}
-
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
 }
 
 .hero {
@@ -599,80 +67,11 @@ body {
   gap: 24px;
 }
 
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
+.title {
+  font-size: 3.5rem;
   font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
 }
 
 .subtitle {
@@ -687,6 +86,15 @@ body {
   margin-bottom: 8px;
 }
 
+.description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+/* === TicTacToe Board/Main === */
 .ttt-main {
   max-width: 320px;
   margin: 0 auto;
@@ -698,17 +106,17 @@ body {
   border: 2px solid var(--accent-red);
 }
 
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
+/* Board styling */
 .ttt-board {
   margin: 0 auto;
   user-select: none;
-  background: #2220; /* transparent, use game container background */
+  background: #000;
+  border-radius: 12px;
+  box-shadow: 0 2px 24px 0 #0005;
+  padding: 16px;
 }
 
+/* Game cell styling */
 .ttt-cell {
   width: 68px;
   height: 68px;
@@ -727,99 +135,23 @@ body {
   font-family: inherit;
   font-weight: 600;
   border: 2px solid var(--border-color);
+  text-transform: uppercase;
 }
 
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
+/* Mark coloring: add dynamic class for X/O for clarity if desired in JS */
+.ttt-cell.x {
   color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
+  font-weight: bold;
 }
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
-}
-
-.title {
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 1.2;
-  margin: 0;
-}
-
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
+.ttt-cell.o {
   color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
+  font-weight: bold;
 }
 
 .ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
   cursor: not-allowed;
   opacity: 0.82;
 }
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
 
 .ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
   background: #fff5f5;
@@ -832,115 +164,23 @@ body {
   outline: 2px solid var(--accent-red);
 }
 
-/* Winner highlight: bold red border */
+/* Winner highlight: thick red border, red text on win */
 .ttt-cell.win {
   border: 2.5px solid var(--accent-red) !important;
   box-shadow: 0 0 0 2px #FF2D2D55 !important;
   color: var(--accent-red) !important;
 }
 
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
+/* Status/ticker */
 .ttt-status {
-  font-size: 1.14rem;
+  font-size: 1.22rem;
   letter-spacing: 0.9px;
   margin-bottom: 2px;
   color: var(--accent-red);
   font-weight: 600;
 }
 
-.description {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: var(--text-secondary);
-  max-width: 600px;
-  margin-bottom: 16px;
-}
-
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
-}
-
+/* Button styling */
 .btn {
   background-color: var(--accent-red);
   color: #fff;
@@ -970,239 +210,10 @@ body {
   font-size: 1.1rem;
 }
 
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
+/* Utility: Remove outlines on buttons except focus for accessibility */
+button:active,
+button:focus-visible {
+  outline: 2px solid var(--accent-red) !important;
 }
 
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
-}
-
-.btn:hover {
-  background-color: #7691ff;
-}
-
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
-}
-
-.btn-large {
-  padding: 12px 24px;
-  font-size: 1.1rem;
-}
-
-/* === TicTacToe Classic Game Overrides === */
-.ttt-main {
-  /* Already handled in inline style in component for theming and layout */
-}
-
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #2220; /* transparent, use game container background */
-}
-
-.ttt-cell {
-  width: 68px;
-  height: 68px;
-  font-size: 2.6rem;
-  border-radius: 11px;
-  outline: none;
-  background: var(--base-light);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
-  will-change: background, border, color, box-shadow;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: 600;
-  border: 2px solid var(--border-color);
-}
-
-.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.82;
-}
-
-/* Highlight X/O marks in red/black, override from App.js too for in-cell style */
-.ttt-cell.x { color: var(--accent-red); font-weight: bold; }
-.ttt-cell.o { color: #000; font-weight: bold; }
-
-.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: #fff5f5;
-  border-color: var(--accent-red);
-  color: var(--accent-red);
-  box-shadow: 0 0 0 2px #FF2D2D22;
-}
-
-.ttt-cell:focus {
-  outline: 2px solid var(--accent-red);
-}
-
-/* Winner highlight: bold red border */
-.ttt-cell.win {
-  border: 2.5px solid var(--accent-red) !important;
-  box-shadow: 0 0 0 2px #FF2D2D55 !important;
-  color: var(--accent-red) !important;
-}
-
-/* Cells use white base, thick border for board effect */
-.ttt-board {
-  margin: 0 auto;
-  user-select: none;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px 0 #0005;
-  padding: 16px;
-}
-
-.ttt-status {
-  font-size: 1.14rem;
-  letter-spacing: 0.9px;
-  margin-bottom: 2px;
-  color: var(--accent-red);
-  font-weight: 600;
-}
+/* Ensure minimal visual clutter and sharp black/red/white look! */
