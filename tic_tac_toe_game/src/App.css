@@ -6,6 +6,50 @@
   --border-color: rgba(255, 255, 255, 0.1);
 }
 
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -15,10 +59,98 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
+}
+
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
 }
 
 .navbar {
@@ -35,6 +167,50 @@ body {
   z-index: 100;
 }
 
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
+}
+
 .logo {
   font-size: 1.25rem;
   font-weight: 600;
@@ -43,8 +219,96 @@ body {
   gap: 8px;
 }
 
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
+}
+
 .logo-symbol {
   color: var(--base-light);
+}
+
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
 }
 
 .container {
@@ -53,6 +317,50 @@ body {
   padding: 0 24px;
   width: 100%;
   box-sizing: border-box;
+}
+
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
 }
 
 .hero {
@@ -65,10 +373,98 @@ body {
   gap: 24px;
 }
 
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
+}
+
 .subtitle {
   color: var(--base-light);
   font-weight: 500;
   font-size: 1.1rem;
+}
+
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
 }
 
 .title {
@@ -78,12 +474,100 @@ body {
   margin: 0;
 }
 
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
+}
+
 .description {
   font-size: 1.1rem;
   line-height: 1.5;
   color: var(--text-secondary);
   max-width: 600px;
   margin-bottom: 16px;
+}
+
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
 }
 
 .btn {
@@ -98,11 +582,143 @@ body {
   transition: background-color 0.2s ease;
 }
 
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
+}
+
 .btn:hover {
   background-color: #7691ff;
+}
+
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
 }
 
 .btn-large {
   padding: 12px 24px;
   font-size: 1.1rem;
+}
+
+/* === TicTacToe Classic Game Overrides === */
+.ttt-main {
+  /* Already handled in inline style in component for theming and layout */
+}
+
+.ttt-board {
+  margin: 0 auto;
+  user-select: none;
+  background: #2220; /* transparent, use game container background */
+}
+
+.ttt-cell {
+  width: 68px;
+  height: 68px;
+  font-size: 2.6rem;
+  border-radius: 11px;
+  outline: none;
+  background: var(--base-light);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.15s, color 0.18s, box-shadow 0.14s;
+  will-change: background, border, color, box-shadow;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+}
+.ttt-cell:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #efefffa8;
+  border-color: #007bff;
+}
+.ttt-cell:disabled, .ttt-cell[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.ttt-status {
+  font-size: 1.14rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 2px;
 }
