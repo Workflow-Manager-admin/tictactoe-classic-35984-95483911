@@ -426,7 +426,7 @@ body {
 }
 
 .logo-symbol {
-  color: var(--base-light);
+  color: var(--accent-red);
 }
 
 /* === TicTacToe Classic Game Overrides === */
